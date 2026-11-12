@@ -1,0 +1,255 @@
+:root {
+  --bg-principal: #121214;
+  --bg-tarjeta: #1e1e24;
+  --bg-input: #2b2b36;
+  --color-texto: #ffffff;
+  --cine-rojo: #e50914;
+  --cine-azul: #0071e3;
+  --cine-verde: #24b47e;
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--color-texto);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1a1a1e;
+  border-bottom: 2px solid #222;
+}
+
+.btn-logout {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-logout:hover {
+  background: #444;
+}
+
+.form-modulo {
+  background: var(--bg-tarjeta);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: var(--bg-input);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background: var(--cine-azul);
+  color: white;
+}
+
+.btn-success {
+  background: var(--cine-verde);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--cine-rojo);
+  color: white;
+}
+
+.btn-secondary {
+  background: #555;
+  color: white;
+}
+
+.tabla-cine {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: var(--bg-tarjeta);
+}
+
+.tabla-cine th,
+.tabla-cine td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.tabla-cine th {
+  background: #1a1a1f;
+}
+
+.tarjetas-metricas {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.tarjeta {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  background: #2b2b36;
+  border: 1px solid #444;
+}
+
+.metrica-alta {
+  border-left: 5px solid var(--cine-verde);
+}
+
+.metrica-baja {
+  border-left: 5px solid var(--cine-rojo);
+}
+
+.cartelera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-pelicula {
+  background: var(--bg-tarjeta);
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-estado {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.badge-estreno {
+  background: var(--cine-rojo);
+  color: white;
+}
+
+.badge-emision {
+  background: var(--cine-verde);
+  color: white;
+}
+
+.poster-pelicula {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  background: #18181c;
+}
+
+.cuerpo-pelicula {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cuerpo-pelicula h3 {
+  margin: 0 0 8px 0;
+}
+
+.meta-pelicula {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tag-genero {
+  background: #333;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.nota-estrellas {
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.descripcion-pelicula {
+  font-size: 0.9em;
+  color: #aaa;
+  margin: 0 0 12px 0;
+  flex-grow: 1;
+}
+
+.detalle-sala {
+  font-size: 0.85em;
+  background: #16161a;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 0 0 12px 0;
+}
+
+.caja-encuesta {
+  background: var(--bg-input);
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+.pregunta-encuesta {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.barra-estrellas {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.estrella-item {
+  font-size: 1.7em;
+  color: #666;
+  cursor: pointer;
+}
+
+.estrella-item:hover {
+  color: #ffcc00;
+}
+
